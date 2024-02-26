@@ -22,9 +22,7 @@ with open('products.csv', encoding='utf-8') as data_file:
                         count = min(int(row[5]), count)
                         if count1 != count:
                             product = row[1]
-                    if product == '':
-                        print('Такой категории не существует в нашей БД')
-                    else:
-                        print(f'В категории: {name} товар {product} был куплен {count} раз')
+                if product == '':
+                    print('Такой категории не существует в нашей БД')
                 else:
-                    continue
+                    print(f'В категории: {name} товар {product} был куплен {count} раз')
