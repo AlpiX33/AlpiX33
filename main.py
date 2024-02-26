@@ -1,4 +1,4 @@
-from csv import reader
+from csv import reader, writer
 
 with open('products.csv', encoding='utf-8') as data_file:
     csv_data = reader(data_file, delimiter=';')
